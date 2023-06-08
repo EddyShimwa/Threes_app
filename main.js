@@ -11,3 +11,7 @@ const material = new THREE.MeshStandardMaterial({ color: "#00ff83" });
 
 //my mesh
 const mesh = new THREE.Mesh(Geometry, material);
+
+//add mesh to scene
+scene.add(mesh);
+
