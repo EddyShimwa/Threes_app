@@ -4,9 +4,10 @@ import * as THREE from 'three';
 const scene = new THREE.Scene();
 
 //my sphere
-const sphereGeometry = new THREE.SphereGeometry(3, 64, 64);
+const Geometry = new THREE.SphereGeometry(3, 64, 64);
 
 //my material
 const material = new THREE.MeshStandardMaterial({ color: "#00ff83" });
 
 //my mesh
+const mesh = new THREE.Mesh(Geometry, material);
