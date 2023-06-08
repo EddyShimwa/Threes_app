@@ -1,1 +1,3 @@
-// import * as 
+import * as THREE from 'three';
+
+//Scene
