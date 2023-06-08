@@ -15,3 +15,8 @@ const mesh = new THREE.Mesh(Geometry, material);
 //add mesh to scene
 scene.add(mesh);
 
+// camera 
+
+const camera = new THREE.PerspectiveCamera(45, 800, 600);
+scene.add(camera);
+
