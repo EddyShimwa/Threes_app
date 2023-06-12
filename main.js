@@ -1,4 +1,6 @@
 import * as THREE from 'three';
+import './style.css';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 //Scene
 const scene = new THREE.Scene();
@@ -55,7 +57,15 @@ window.addEventListener("resize", () => {
     sizes.height = window.innerHeight;
 
     //update camera
+    camera.updateProjectionMatrix();
     camera.aspect = sizes.width / sizes.height;
     renderer.setSize(sizes.width, sizes.height);
 }
 )
+
+const loop = () => {
+    // mesh.position.x += 0.2 ;
+    renderer.render(scene, camera);
+    window.requestAnimationFrame(loop);
+}
+loop();
